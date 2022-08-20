@@ -13,6 +13,7 @@
     <!----------CSS---------->
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/lightslider.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <title>M:)REISS | Meu portfólio</title>
@@ -84,7 +85,82 @@
 
 
 
+    <!----------Slider---------->
+    <section class="slider">
+        <h1><i class="uil uil-edit"></i>Meus conhecimentos</h1>
+        <ul id="auto" class="hidden">
+
+            <li>
+               <div class="slider__box">
+                  <img src="assets/img-slider/html.jpg">
+                </div>
+            </li>
+
+            <li>
+                <div class="slider__box">
+                   <img src="assets/img-slider/css.jpg">
+                 </div>
+             </li>
+
+             <li>
+                <div class="slider__box">
+                   <img src="assets/img-slider/javascript.jpg">
+                 </div>
+             </li>
+
+             <li>
+                <div class="slider__box">
+                   <img src="assets/img-slider/php.jpg">
+                 </div>
+             </li>
+
+             <li>
+                <div class="slider__box">
+                   <img src="assets/img-slider/react.jpg">
+                 </div>
+             </li>
+
+             <li>
+                <div class="slider__box">
+                   <img src="assets/img-slider/angular.jpg">
+                 </div>
+             </li>
+
+             <li>
+                <div class="slider__box">
+                   <img src="assets/img-slider/vue.jpg">
+                 </div>
+             </li>
+        </ul>
+    </section>
+
+
+    <footer>
+        <p>Desenvolvido por: &copy; <a href="https://mreiss-meu-portfolio.vercel.app/">M<span>:)</span>REISS</a> 2022.</p>
+    </footer>
+
+
+
+    
+
+
+
     <!----------JavaScript---------->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/JQuery3.3.1.js"></script>
+    <script src="assets/js/lightslider.js"></script>
+
+
+    <!----------JQuery---------->
+    <script>
+
+        $(document).ready(function() {
+            $('#auto').lightSlider({
+                autoWidth:true,
+                loop:true,
+            });
+          });
+
+    </script>
 </body>
 </html>
