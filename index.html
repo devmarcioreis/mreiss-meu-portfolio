@@ -11,79 +11,83 @@
     <!----------Icon---------->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!----------CSS---------->
-    <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/lightslider.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <title>M:)REISS | Meu portfólio</title>
+    <title>M:)REISS - Portfólio Márcio Reis</title>
 </head>
 
 <body>
-
     <!----------Header---------->
     <header>
-
-        <!----------Navbar---------->
         <nav>
-            <div class="nav__container">
-                <a class="nav__logo" href="index.html">M<span>:)</span>REISS</a>
+            <div class="header__nav">
+                <a href="index.html" class="header__nav-logo">M<span>:)</span>REISS</a>
 
-                <ul class="nav__links">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="#">Sobre mim</a></li>
-                    <li><a href="#">Fale comigo</a></li>
-                    <li><a href="#">Meus projetos</a></li>
-                    <li><a href="#">Meu portfólio</a></li>
-                    <li><a href="#" target="_blank" download="#"><i class="uil uil-document-info"></i>Meu currículo</a></li>
+                <ul class="header__nav-links">
+                    <li><a href="index.html" class="active"><i class="uil uil-estate"></i>Home</a></li>
+                    <li><a href="#"><i class="uil uil-clipboard-notes"></i>Portfólio</a></li>
+                    <li><a href="#"><i class="uil uil-copy"></i>Projetos</a></li>
+                    <li><a href="#"><i class="uil uil-user-square"></i>Sobre mim</a></li>
+                    <li><a href="#"><i class="uil uil-file-download-alt"></i>Meu currículo</a></li>
+                    <li><a href="#"><i class="uil uil-envelope-add"></i>Fale comigo</a></li>
                 </ul>
 
-                <!----------Botões Mobile---------->
-                <button class="nav__toggle-btn" id="nav__toggle-open"><i class="uil uil-bars"></i></button>
-
-                <button class="nav__toggle-btn" id="nav__toggle-close"><i class="uil uil-multiply"></i></button>
-
+                <!----------Mobile btn---------->
+                <button class="header__nav-btn" id="header__nav-btnOpen"><i class="uil uil-bars"></i></button>
+                
+                <button class="header__nav-btn" id="header__nav-btnClose"><i class="uil uil-multiply"></i></button>
             </div>
         </nav>
     </header>
 
     <!----------Main---------->
-    <main>
-        <section class="main__container">
-            <div class="main__content">
+    <main class="main__container">
+        <div class="main__content">
 
-                <article>
-                    <h1>Oi, eu sou<br> <span>Marcio Reis</span></h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt ut omnis maiores aliquid, minima tenetur cupiditate labore obcaecati impedit similique provident est consequuntur totam dolorum, velit sunt eius harum dolor?</p><br>
+            <div class="main__text">
+                <h1>Oi, eu sou <br><span>Marcio Reis</span></h1>
 
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt ut omnis maiores aliquid, minima tenetur cupiditate labore obcaecati impedit similique provident est consequuntur totam dolorum, velit sunt eius harum dolor?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt ut omnis maiores aliquid, minima tenetur cupiditate labore obcaecati impedit similique provident est consequuntur totam dolorum, velit sunt eius harum dolor?</p><br>
 
-                    <!----------Main Botão---------->
-                    <div class="main__btn" id="mobile__btn">
-                        <a href="#"><i class="uil uil-envelope-edit"></i> Quer falar comigo?</a><img class="main__seta" src="assets/images/arrow.png">
-                    </div>
-                </article>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt ut omnis maiores aliquid, minima tenetur cupiditate labore obcaecati impedit similique provident est consequuntur totam dolorum, velit sunt eius harum dolor?</p>
 
-                <!----------Main Imagem---------->
-                <div class="main__profile" >
-                    <img src="assets/images/profile.png" alt="Imagem de perfil">
+                <div class="main__btn" id="mobile__btn">
+                    <a href="#"><i class="uil uil-comment-exclamation"></i> Quer falar comigo?</a>
+                </div>
+            </div>
+
+                <div class="main__profile">
+                    <img src="assets/img/profile.png" alt="Foto de perfil">
                 </div>
 
-                <!----------Main Redes Sociais---------->
-                <div class="main__redes-sociais">
+                <div class="main__social">
                     <ul>
-                        <li><a href="#"><i class="uil uil-twitter"></i></a></li>
-                        <li><a href="#"><i class="uil uil-instagram-alt"></i></a></li>
-                        <li><a href="#"><i class="uil uil-linkedin"></i></a></li>
-                        <li><a href="#"><i class="uil uil-github"></i></a></li>
+                        <li>
+                            <p class="mobile__text">Acesse:</p>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/m%C3%A1rcio-reis-santos-716b649b/" target="_blank"><i class="uil uil-linkedin"></i></a>
+                        </li>
+
+                        <li>
+                            <a href="https://github.com/devmarcioreis" target="_blank"><i class="uil uil-github"></i></a>
+                        </li>
+
+                        <li>
+                            <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicHQifQ%3D%3D%22%7D" target="_blank"><i class="uil uil-twitter"></i></a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.instagram.com/sem/campaign/emailsignup/?campaign_id=13534421690&extra_1=s|c|547348930993|e|instagram%20%27|&placement=&creative=547348930993&keyword=instagram%20%27&partner_id=googlesem&extra_2=campaignid%3D13534421690%26adgroupid%3D126262409974%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-1321618851291%26loc_physical_ms%3D1001773%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQjwr4eYBhDrARIsANPywCgU3bapXC9WU6puIsgXmyCUgxlGlAHoQTr65Zif5ibuxfq_P3MgQ4QaAr1WEALw_wcB" target="_blank"><i class="uil uil-instagram-alt"></i></a>
+                        </li>
                     </ul>
                 </div>
-                
-            </div>
-        </section>
+        </div>
+
     </main>
-
-
 
     <!----------Slider---------->
     <section class="slider">
@@ -92,43 +96,43 @@
 
             <li>
                <div class="slider__box">
-                  <img src="assets/img-slider/html.jpg">
+                  <img src="assets/img/slider/angular.jpg">
                 </div>
             </li>
 
             <li>
                 <div class="slider__box">
-                   <img src="assets/img-slider/css.jpg">
+                   <img src="assets/img/slider/css.jpg">
                  </div>
              </li>
 
              <li>
                 <div class="slider__box">
-                   <img src="assets/img-slider/javascript.jpg">
+                   <img src="assets/img/slider/html.jpg">
                  </div>
              </li>
 
              <li>
                 <div class="slider__box">
-                   <img src="assets/img-slider/php.jpg">
+                   <img src="assets/img/slider/javascript.jpg">
                  </div>
              </li>
 
              <li>
                 <div class="slider__box">
-                   <img src="assets/img-slider/react.jpg">
+                   <img src="assets/img/slider/php.jpg">
                  </div>
              </li>
 
              <li>
                 <div class="slider__box">
-                   <img src="assets/img-slider/angular.jpg">
+                   <img src="assets/img/slider/react.jpg">
                  </div>
              </li>
 
              <li>
                 <div class="slider__box">
-                   <img src="assets/img-slider/vue.jpg">
+                   <img src="assets/img/slider/vue.jpg">
                  </div>
              </li>
         </ul>
@@ -141,7 +145,10 @@
 
 
 
-    
+
+
+
+
 
 
 
@@ -149,18 +156,6 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/JQuery3.3.1.js"></script>
     <script src="assets/js/lightslider.js"></script>
-
-
-    <!----------JQuery---------->
-    <script>
-
-        $(document).ready(function() {
-            $('#auto').lightSlider({
-                autoWidth:true,
-                loop:true,
-            });
-          });
-
-    </script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
