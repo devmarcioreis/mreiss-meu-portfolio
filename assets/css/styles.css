@@ -39,6 +39,8 @@ body {
     height: 100vh;
     width: 100vw;
     font-family: var(--principal-font);
+    font-weight: 100;
+    color: var(--color-white);
 }
 
 /*==========Header==========*/
@@ -66,9 +68,10 @@ header nav {
     font-size: 1.3rem;
     color: var(--color-white);
     font-weight: 900;
-    margin-left: 4rem;
+    margin-left: 3rem;
 }
 .header__nav-logo span {
+    font-family: var(--logo-font);
     color: var(--color1);
 }
 .header__nav-links {
@@ -81,14 +84,12 @@ header nav {
     height: 100%;
 }
 .header__nav-links li i {
-    font-size: 1rem;
+    font-size: .9rem;
     letter-spacing: .2rem;
-    color: var(--color2);
 }
 .header__nav-links li a {
     color: var(--color-white);
-    font-size: 1rem;
-    font-weight: 100;
+    font-size: .9rem;
     height: 100%;
     display: flex;
     align-items: center;
@@ -125,14 +126,14 @@ header nav {
 
 /*==========Main==========*/
 .main__container {
-    font-family: var(--principal-font);
-    color: var(--color-white);
-    padding-top: 7rem;
-    padding-bottom: 4rem;
+    width: 95vw;
+    margin: auto;
+    padding: 7rem 0 3rem 0;
+    
 }
 .main__content {
-    width: 90%;
-    height: 35rem;
+    width: 95%;
+    height: 32rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -147,29 +148,28 @@ header nav {
 }
 .main__text {
     width: 60%;
+    margin-left: 1rem;
+    margin-right: 5rem;
 }
 .main__text h1 {
-    margin-left: 1rem;
     font-size: 1.5rem;
 }
 .main__text h1 span {
-    color: var(--color1);
-    font-size: 4.3rem;
-    font-weight: 900;
-    line-height: 3.5rem;
+    color: var(--color2);
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4rem;
 }
 .main__text p {
-    font-family: 100;
     text-align: justify;
     font-size: 1.2rem;
     color: var(--color-text);
-    margin-left: 1rem;
 }
 .main__btn {
     padding: 15px 10px;
     border-radius: 10px;
     cursor: pointer;
-    margin: 2rem 1rem;
+    margin-top: 3rem;
     width: 200px;
     display: flex;
     border: 2px solid var(--color2);
@@ -180,7 +180,6 @@ header nav {
 }
 .main__btn a {
     color: var(--color-white);
-    font-weight: 400;
     font-size: 1.1rem;
 }
 .main__profile img {
@@ -198,10 +197,10 @@ header nav {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin-right: 2rem;
+    margin-right: 2.5rem;
 }
 .main__social a {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color: var(--color2);
     transition: 1s ease;
 }
@@ -212,13 +211,13 @@ header nav {
 
 /*==========Slider==========*/
 .slider {
-    width: 90%;
+    width: 95vw;
     margin: auto;
 }
 .slider h1 {
     font-family: var(--principal-font);
     font-weight: 300;
-    padding: 10px;
+    padding: 1rem;
     font-size: .9rem;
     letter-spacing: .1rem;
     text-transform: uppercase;
@@ -226,16 +225,13 @@ header nav {
 }
 .slider i {
     color: var(--color2);
-    font-size: 1.5rem;
-}
-.hidden {
-    overflow: visible !important;
+    font-size: 1rem;
 }
 .slider__box {
     width: 270px;
     height: 170px;
     border-radius: 10px;
-    margin: 0px 10px 10px 10px;
+    margin: 0 10px;
     overflow: hidden;
 }
 .slider__box img {
@@ -247,12 +243,15 @@ header nav {
 
 /*==========Footer==========*/
 footer {
-    text-align: center;
-    margin-top: 40px;
-    padding-bottom: 40px;
+    width: 95vw;
+    margin: auto;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 footer p {
     color: var(--color-text);
+    text-align: center;
 }
 footer p a {
     color: var(--color-white);
@@ -275,7 +274,7 @@ footer p a:hover {
 /*==========Media Query==========*/
 @media (max-width: 1024px) {
     .header__nav-logo {
-        margin-left: 1rem;
+        margin-left: 1.5rem;
     }
     .header__nav {
         width: var(--widht-mobile);
@@ -294,13 +293,13 @@ footer p a:hover {
         width: 100%;
     }
     .header__nav-links li a {
-        background: var(--color-text);
+        background: var(--color-white);
         color: var(--color-black);
-        height: 3.5rem;
+        height: 3rem;
         width: 100%;
         display: flex;
         align-items: center;
-        padding: 0 3rem 0 2rem;
+        padding: 0 2rem;
         border-top: 1px solid var(--color-border);
     }
     .header__nav-links li a.active::after {
@@ -308,12 +307,12 @@ footer p a:hover {
     }
     .header__nav-btn {
         display: inline-block;
-        font-size: 1.7rem;
+        font-size: 2rem;
         color: var(--color-white);
         border: none;
         background: var(--color-transparent);
         cursor: pointer;
-        margin-right: .5rem;
+        margin-right: 1rem;
     }
     #header__nav-btnClose {
         display: none;
@@ -358,24 +357,27 @@ footer p a:hover {
     /*==========Main==========*/
     .main__content {
         box-shadow: none;
+        width: 95vw;
+        height: 50vh;
+        border-radius: 0;
     }
     .main__content:hover {
         box-shadow: none;
     }
     .main__text {
-        width: 70vw;
+        width: 80vw;
     }
     .main__text h1 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     .main__text h1 span {
-        font-size: 3.3rem;
+        font-size: 4rem;
+        line-height: 3rem;
     }
     #mobile__btn {
         background: var(--color2);
         border: none;
-        margin-top: 20px;
-        padding: 10px;
+        margin-top: 1rem;
         width: auto;
     }
     #mobile__btn:hover {
@@ -402,15 +404,21 @@ footer p a:hover {
         color: var(--color2);
     }
     .slider {
-        margin-top: -7rem;
+        width: 95vw;
+        margin-top: -2rem;
     }
     .slider h1 {
         padding-bottom: 0;
-        margin-left: -.5rem;
     }
     .slider__box {
         width: 300px;
         height: 200px;
+    }
+    footer {
+        margin: auto;
+        margin-top: 1rem;
+        width: 95vw;
+        padding-top: 1rem;
     }
     
 }
@@ -421,38 +429,32 @@ footer p a:hover {
 
 /*==========Media Query Mobile==========*/
 @media (max-width: 768px) {
-    .main__container {
-        height: 100vh;
-    }
     .main__content {
         flex-direction: column;
-        width: 100vw;
         border-radius: 0;
         margin-top: -3rem;
     } 
     .main__text {
-        width: 95vw;
-        margin-top: 1rem;
-        margin-left: -1rem;
+        width: 100%;
+        margin: auto;
     }
     .main__text h1 {
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-align: center;
     }
     .main__text h1 span {
         font-size: 3rem;
     }
+    .main__text p {
+        font-size: .8rem;
+        line-height: 1.2rem;
+    }
     #mobile__btn {
         background: var(--color2);
         border: none;
-        width: auto;
     }
     #mobile__btn:hover {
         background: var(--color2);
-    }
-    #mobile__btn a {
-        font-size: 1rem;
-        margin: auto;
     }
     #mobile__btn a:hover {
         color: var(--color-white);
@@ -461,16 +463,12 @@ footer p a:hover {
         display: none;
     }
     .mobile__text {
-        display: inline-block;
-        color: var(--color-text);
-        padding: .5rem;
+        display: block;
+        color: var(--color-white);
+        margin-top: .3rem;
     }
     .main__social ul {
         flex-direction: row;
-        margin-top: 2rem;
-    }
-    .slider {
-        margin-top: 2rem;
     }
     .slider h1 {
         padding-bottom: 0;
@@ -479,9 +477,5 @@ footer p a:hover {
     .slider__box {
         width: 260px;
         height: 190px;
-    }
-    footer {
-        margin-top: 2rem;
-        padding-bottom: 2rem;
     }
 }
