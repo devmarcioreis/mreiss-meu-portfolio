@@ -446,12 +446,15 @@ footer p a:hover {
         font-size: 3rem;
     }
     .main__text p {
-        font-size: .8rem;
+        font-size: 1.1rem;
         line-height: 1.2rem;
     }
     #mobile__btn {
         background: var(--color2);
         border: none;
+    }
+    #mobile__btn a {
+        font-weight: 300;
     }
     #mobile__btn:hover {
         background: var(--color2);
