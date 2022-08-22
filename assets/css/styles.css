@@ -448,6 +448,7 @@ footer p a:hover {
     .main__text p {
         font-size: 1.1rem;
         line-height: 1.2rem;
+        color: var(--color-white);
     }
     #mobile__btn {
         background: var(--color2);
