@@ -152,25 +152,48 @@ header nav {
     margin-right: 5rem;
 }
 .main__text h1 {
+    color: var(--color1);
     font-size: 1.5rem;
 }
 .main__text h1 span {
-    color: var(--color2);
+    color: var(--color-white);
     font-size: 4.5rem;
     font-weight: 700;
     line-height: 4rem;
 }
+.main__text h3 {
+    color: var(--color2);
+    padding-bottom: 1rem;
+}
 .main__text p {
-    text-align: justify;
     font-size: 1.2rem;
     color: var(--color-text);
 }
+#language {
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+#language i {
+    font-size: 1.3rem;
+}
+.html {
+    color: #E44D25;
+}
+.css {
+    color: #214CE5;
+}
+.js {
+    color: #F7E018;
+}
+.react {
+    color: #00D8FF;
+}
 .main__btn {
-    padding: 15px 10px;
+    padding: 10px;
     border-radius: 10px;
     cursor: pointer;
     margin-top: 3rem;
-    width: 200px;
+    width: 280px;
     display: flex;
     border: 2px solid var(--color2);
 }
@@ -180,7 +203,8 @@ header nav {
 }
 .main__btn a {
     color: var(--color-white);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    margin: auto;
 }
 .main__profile img {
     width: 90%;
@@ -241,12 +265,21 @@ header nav {
     object-position: top;
 }
 
+/*==========Sobre==========*/
+
+/*==========Meus serviços==========*/
+
+/*==========Portfólio==========*/
+
+/*==========Contato==========*/
+
 /*==========Footer==========*/
 footer {
-    width: 95vw;
+    width: 100vw;
+    background: var(--color2);
     margin: auto;
-    margin-top: 1rem;
-    padding-top: 1rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
     padding-bottom: 1rem;
 }
 footer p {
@@ -295,6 +328,7 @@ footer p a:hover {
     .header__nav-links li a {
         background: var(--color-white);
         color: var(--color-black);
+        font-weight: 600;
         height: 3rem;
         width: 100%;
         display: flex;
@@ -414,13 +448,6 @@ footer p a:hover {
         width: 300px;
         height: 200px;
     }
-    footer {
-        margin: auto;
-        margin-top: 1rem;
-        width: 95vw;
-        padding-top: 1rem;
-    }
-    
 }
 
 
@@ -435,7 +462,7 @@ footer p a:hover {
         margin-top: -3rem;
     } 
     .main__text {
-        width: 100%;
+        width: 95%;
         margin: auto;
     }
     .main__text h1 {
@@ -445,14 +472,22 @@ footer p a:hover {
     .main__text h1 span {
         font-size: 3rem;
     }
+    .main__text h3 {
+        text-align: center;
+        font-size: 1.2rem;
+    }
     .main__text p {
         font-size: 1.1rem;
         line-height: 1.2rem;
         color: var(--color-white);
     }
+    #language {
+        margin-bottom: 2rem;
+    }
     #mobile__btn {
         background: var(--color2);
         border: none;
+        margin-bottom: 1rem;
     }
     #mobile__btn a {
         font-weight: 300;
@@ -472,7 +507,11 @@ footer p a:hover {
         margin-top: .3rem;
     }
     .main__social ul {
+        margin-top: 2rem;
         flex-direction: row;
+    }
+    .slider {
+        margin-top: 4rem;
     }
     .slider h1 {
         padding-bottom: 0;
@@ -481,5 +520,8 @@ footer p a:hover {
     .slider__box {
         width: 260px;
         height: 190px;
+    }
+    footer p {
+        font-size: .9rem;
     }
 }
