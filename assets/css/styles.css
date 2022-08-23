@@ -372,8 +372,6 @@ footer {
     .nav__links {
         position: absolute;
         top: 100%;
-        right: -1rem;
-        left: -1rem;
         flex-direction: column;
         gap: 0;
         align-items: flex-start;
@@ -521,6 +519,9 @@ footer {
 
 /*==========Media Query==========*/
 @media (max-width: 768px) {
+    .nav__logo {
+        margin-left: .6rem;
+    }
     .main__text {
         width: 90%;
         margin: auto;
@@ -572,6 +573,7 @@ footer {
     }
     .footer__tec i {
         font-size: 1.5rem;
+        margin-left: 3rem;
     }
     .footer__devices {
         margin: auto;
@@ -585,6 +587,7 @@ footer {
     }
     .footer__devices i {
         font-size: 1.5rem;
+        margin-left: 3rem;
     }
     .footer__sociais {
         display: block;
@@ -593,7 +596,7 @@ footer {
     }
     .footer__sociais ul {
         display: flex;
-        gap: 1rem;
+        gap: 1.5rem;
     }
     .footer__sociais p {
         text-align: center;
