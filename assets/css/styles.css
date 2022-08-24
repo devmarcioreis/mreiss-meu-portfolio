@@ -153,7 +153,6 @@ nav {
     font-size: 4.5rem;
     font-weight: 700;
     line-height: 4rem;
-    text-shadow: 1px 1px var(--color1);
 }
 .main__text h3 {
     color: var(--color2);
@@ -282,8 +281,12 @@ nav {
 /*==========Contato==========*/
 .contato {
     height: 100vh;
-    width: 95%;
+    width: 100vw;
+    background: var(--color-bg1);
+}
+.contato__container{
     margin: auto;
+    width: 95%;
 }
 
 /*==========Footer==========*/
@@ -538,7 +541,7 @@ footer {
         font-size: 1.1rem;
     }
     .main__text p {
-        font-size: .8rem;
+        font-size: 1rem;
     }
     #language {
         font-size: .8rem;
